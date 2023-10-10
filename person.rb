@@ -7,7 +7,9 @@ class Person
     @age = age
     @parent_permission = parent_permission
   end
+
   private
+
   def private_of_age?
     @age >= 18
   end
