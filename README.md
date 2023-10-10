@@ -60,14 +60,12 @@ The project is built using the following technologies:
 
 ## Setup
 
-To get a local copy up and running, follow these steps.
+> You need the following tools be installed in your computer:
 
-1. Clone this repository to your local machine:
-
-```
-git clone https://github.com/ZabihullahNooriWardak/OOP-School-library.git
-
-```
+> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+> - IDE
+> - Ruby setup
 
 
 ## 👥 Authors <a name="authors"></a>
