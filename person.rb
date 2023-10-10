@@ -1,10 +1,10 @@
 class Person
   attr_accessor :id, :name, :age
 
-  def initialize(age, name: 'unknown', parent_permission: true) # Updated to use keyword arguments
+  def initialize(age, name: 'unknown', parent_permission: true) 
     @name = name
     @age = age
-    @parent_permission = parent_permission # Removed extra spaces and fixed indentation
+    @parent_permission = parent_permission 
   end
 
   def private_of_age?

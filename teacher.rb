@@ -7,6 +7,6 @@ class Teacher < Person
   end
 
   def can_use_services?
-    true # Removed trailing whitespace
+    true 
   end
 end
