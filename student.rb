@@ -7,7 +7,7 @@ class Student < Person
     end
   
     def play_hooky
-      "¯(ツ)/¯"  # Removed unnecessary escape and trailing whitespace
+      '¯(ツ)/¯' # Use single-quoted string, removed unnecessary escape, and trailing whitespace
     end
   end
   
