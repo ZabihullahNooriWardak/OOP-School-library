@@ -1,6 +1,6 @@
 class Nameable
   def correct_name
-    raise NotImplementedError, "Subclasses must implement this method"
+    raise NotImplementedError, 'Subclasses must implement this method'
   end
 end
 
@@ -8,6 +8,7 @@ class Person < Nameable
   attr_accessor :id, :name, :age
 
   def initialize(age:, name: 'unknown', parent_permission: true)
+    super()
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -31,6 +32,7 @@ end
 
 class Decorator < Nameable
   def initialize(nameable)
+    super()
     @nameable = nameable
   end
 
@@ -51,8 +53,6 @@ class TrimmerDecorator < Decorator
     original_name.length > 10 ? original_name[0, 10] : original_name
   end
 end
-
-
 
 person = Person.new(age: 22, name: 'maximilianus')
 puts person.correct_name
