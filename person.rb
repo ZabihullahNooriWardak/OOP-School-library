@@ -8,7 +8,7 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :id, :name, :age, :rentals  
+  attr_accessor :id, :name, :age, :rentals
 
   def initialize(age:, name: 'unknown', parent_permission: true)
     super()
@@ -26,7 +26,7 @@ class Person < Nameable
   def add_rental(book, date)
     Rental.new(book, self, date)
   end
-  
+
   private
 
   def private_of_age?
