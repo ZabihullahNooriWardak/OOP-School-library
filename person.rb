@@ -1,3 +1,6 @@
+require_relative 'classroom' 
+require_relative 'book'     
+require_relative 'rental'    
 class Nameable
   def correct_name
     raise NotImplementedError, 'Subclasses must implement this method'
@@ -5,14 +8,14 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :id, :name, :age
+  attr_reader :rentals
 
   def initialize(age:, name: 'unknown', parent_permission: true)
-    super()
     @id = Random.rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = [] 
   end
 
   def correct_name

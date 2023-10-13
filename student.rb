@@ -1,3 +1,6 @@
+require_relative 'classroom' 
+require_relative 'book'    
+require_relative 'rental'   
 class Student < Person
   attr_accessor :classroom
 
