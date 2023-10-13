@@ -1,6 +1,6 @@
-require_relative 'classroom' 
-require_relative 'book'     
-require_relative 'rental'    
+require_relative 'classroom'
+require_relative 'book'
+require_relative 'rental'
 class Nameable
   def correct_name
     raise NotImplementedError, 'Subclasses must implement this method'
@@ -15,7 +15,7 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @rentals = [] 
+    @rentals = []
   end
 
   def correct_name
